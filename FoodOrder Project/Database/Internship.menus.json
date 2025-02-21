@@ -330,4 +330,75 @@
     "$oid": "667158dec45b2f6c5ad027d3"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eb00034b3a9c6f6f7e5678"
+  },
+  "menu": [
+    {
+      "category": "Fried Rices",
+      "items": [
+        "64eb02394b3a9c6f6f7e1122",
+        "64eb02434b3a9c6f6f7e2233"
+        
+      ],
+      "_id": {
+        "$oid": "64eb012a4b3a9c6f6f7e9abc"
+      }
+    },
+{
+      "category": "Deserts",
+      "items": [
+        "64eb035a4b3a9c6f6f7e6677",
+        "64eb03614b3a9c6f6f7e7788"
+      ],
+      "_id": {
+        "$oid": "64eb03674b3a9c6f6f7e8899"
+      }
+    }
+
+  ],
+  "restaurant": {
+    "$oid": "64eaff6f4b3a9c6f6f7e1234"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eb064f4b3a9c6f6f7e009a"
+  },
+  "menu": [
+    {
+      "category": "Sweets",
+      "items": [
+        "64eb04b34b3a9c6f6f7eede4",
+        "64eb04b84b3a9c6f6f7efff5",
+        "64eb06144b3a9c6f6f7e0001"
+        
+      ],
+      "_id": {
+        "$oid": "64eb04a74b3a9c6f6f7eccd2"
+      }
+    },
+{
+      "category": "Cakes and Pastries",
+      "items": [
+        "64eb06284b3a9c6f6f7e0034",
+        "64eb06354b3a9c6f6f7e0056"
+      ],
+      "_id": {
+        "$oid": "64eb04ad4b3a9c6f6f7edd13"
+      }
+    }
+
+  ],
+  "restaurant": {
+    "$oid": "64eb04a14b3a9c6f6f7ebbc1"
+  },
+  "__v": 0
 }]
+
+
+
+

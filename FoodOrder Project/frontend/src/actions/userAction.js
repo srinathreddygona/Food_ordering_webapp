@@ -14,7 +14,7 @@ export const login=(email,password)=>async (dispatch)=>{
                 },
         };
         const {data}=await axios.post(
-            `/api/v1/users/login`,
+            `https://bitecart-back.onrender.com/api/v1/users/login`,
             {email,password},
             config
         );
@@ -37,7 +37,7 @@ export const register=(userData)=>async (dispatch)=>{
         const config={
             headers:{"Content-Type": "multipart/form-data"},
         };
-        const {data}=await axios.post(`/api/v1/users/signup`,userData,config);
+        const {data}=await axios.post(`https://bitecart-back.onrender.com/api/v1/users/signup`,userData,config);
         dispatch({
             type:REGISTER_USER_SUCCESS,
             payload:data.data.user,
@@ -58,7 +58,7 @@ export const register=(userData)=>async (dispatch)=>{
 export const loadUser =() => async (dispatch)=>{
     try{
         dispatch({ type: LOAD_USER_REQUEST});
-        const {data}=await axios.get(`/api/v1/users/me`);
+        const {data}=await axios.get(`https://bitecart-back.onrender.com/api/v1/users/me`);
         dispatch({
             type:LOAD_USER_SUCCESS,
             payload:data.user,
@@ -81,7 +81,7 @@ export const updateProfile=(userData)=>async(dispatch)=>{
             }
         };
         const {data}=await axios.put(
-            "/api/v1/users/me/update",
+            "https://bitecart-back.onrender.com/api/v1/users/me/update",
             userData,
             config
         );
@@ -98,7 +98,7 @@ export const updateProfile=(userData)=>async(dispatch)=>{
 //logout
 export const logout=()=>async (dispatch)=>{
     try {
-        await axios.get(`/api/v1/users/logout`);
+        await axios.get(`https://bitecart-back.onrender.com/api/v1/users/logout`);
         dispatch({
             type:LOGOUT_SUCCESS,
         });
@@ -126,7 +126,7 @@ try{
         },
     };
     const {data}=await axios.put(
-        "/api/v1/users/password/update",
+        "https://bitecart-back.onrender.com/api/v1/users/password/update",
         passwords,
         config,
     );
@@ -154,7 +154,7 @@ export const forgotPassword=(email)=>async(dispatch)=>{
             },
         };
         const {data}=await axios.post(
-            "/api/v1/users/forgetPassword",
+            "https://bitecart-back.onrender.com/api/v1/users/forgetPassword",
             email,config
         );
         dispatch({
@@ -183,7 +183,7 @@ export const resetPassword=(token,passwords)=>async(dispatch)=>{
                 "Content-Type":"application/json",
         }
         };
-        const {data}=await axios.patch(`/api/v1/users/resetPassword/${token}`,
+        const {data}=await axios.patch(`https://bitecart-back.onrender.com/api/v1/users/resetPassword/${token}`,
         passwords,
         config
     );
